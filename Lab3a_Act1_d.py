@@ -11,5 +11,5 @@
 
 from conversions import convertWtoBTU
 
-pounds = float(input("Please enter the number of pounds to be converted to Newtons: "))
-print(pounds, "pounds is equivalent to", convertLbstoN(pounds),"Newtons")
+watts = float(input("Please enter the number of Watts to be converted to BTU: "))
+print(watts, "watts is equivalent to", convertWtoBTU(watts),"BTU")

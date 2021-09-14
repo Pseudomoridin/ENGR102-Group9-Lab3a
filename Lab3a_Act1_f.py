@@ -11,5 +11,5 @@
 
 from conversions import convertCtoR
 
-pounds = float(input("Please enter the number of pounds to be converted to Newtons: "))
-print(pounds, "pounds is equivalent to", convertLbstoN(pounds),"Newtons")
+degreeC = float(input("Please enter the temperature in degrees Celcius to be converted to degrees Rankine: "))
+print(degreeC, "degrees Celcius is equivalent to", convertCtoR(degreeC),"degrees Rankine")

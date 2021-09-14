@@ -11,5 +11,5 @@
 
 from conversions import convertKMtoMI
 
-pounds = float(input("Please enter the number of pounds to be converted to Newtons: "))
-print(pounds, "pounds is equivalent to", convertLbstoN(pounds),"Newtons")
+km = float(input("Please enter the number of kilometers to be converted to miles: "))
+print(km, "kilometers is equivalent to", convertKMtoMI(km),"miles.")

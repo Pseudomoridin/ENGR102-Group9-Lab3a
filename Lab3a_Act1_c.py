@@ -11,5 +11,5 @@
 
 from conversions import convertATMtoMMHG
 
-pounds = float(input("Please enter the number of pounds to be converted to Newtons: "))
-print(pounds, "pounds is equivalent to", convertLbstoN(pounds),"Newtons")
+atm = float(input("Please enter the number of atmospheres to be converted to millimeters of Mercury: "))
+print(atm, "atmospheres is equivalent to", convertATMtoMMHG(atm),"millimeters of Mercury")

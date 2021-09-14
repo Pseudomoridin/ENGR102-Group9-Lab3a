@@ -11,5 +11,5 @@
 
 from conversions import convertLPStoGPM
   
-pounds = float(input("Please enter the number of pounds to be converted to Newtons: "))
-print(pounds, "pounds is equivalent to", convertLbstoN(pounds),"Newtons")
+lps = float(input("Please enter the number of Liters per second to be converted to Gallons per minute: "))
+print(lps, "Liters per second is equivalent to", convertLPStoGPM(lps),"Gallons per minute")
