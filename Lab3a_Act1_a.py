@@ -11,5 +11,6 @@
 
 from conversions import convertLbstoN
 
+#all functions are stored in and imported from conversions.py
 pounds = float(input("Please enter the number of pounds to be converted to Newtons: "))
-print(pounds, "pounds is equivalent to", convertLbstoN(pounds),"Newtons")
+print((pounds // .01) / 100, "pounds is equivalent to", convertLbstoN(pounds),"Newtons")
