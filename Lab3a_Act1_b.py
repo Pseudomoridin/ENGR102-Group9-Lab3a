@@ -9,6 +9,7 @@
 # Assignment:   Lab 2A Activity 3
 # Date:         September 8, 2021
 
-#kilometers to miles
-def convertKMtoMI():
-  return #null return, placeholder
+from conversions import convertKMtoMI
+
+pounds = float(input("Please enter the number of pounds to be converted to Newtons: "))
+print(pounds, "pounds is equivalent to", convertLbstoN(pounds),"Newtons")

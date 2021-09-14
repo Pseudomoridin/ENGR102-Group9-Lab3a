@@ -9,6 +9,7 @@
 # Assignment:   Lab 2A Activity 3
 # Date:         September 8, 2021
 
-#Degrees Celcius to Degrees Rankine
-def convertCtoR():
-  return #null return, placeholder
+from conversions import convertCtoR
+
+pounds = float(input("Please enter the number of pounds to be converted to Newtons: "))
+print(pounds, "pounds is equivalent to", convertLbstoN(pounds),"Newtons")
