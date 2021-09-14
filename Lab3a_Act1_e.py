@@ -13,4 +13,4 @@ from conversions import convertLPStoGPM
   
 #all functions are stored in and imported from conversions.py
 lps = float(input("Please enter the number of liters per second to be converted to gallons per minute: "))
-print((lps // .01) / 100, "liters per second is equivalent to", convertLPStoGPM(lps),"gallons per minute")
+print(round(lps,2), "liters per second is equivalent to", convertLPStoGPM(lps),"gallons per minute")

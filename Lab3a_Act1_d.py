@@ -13,4 +13,4 @@ from conversions import convertWtoBTU
 
 #all functions are stored in and imported from conversions.py
 watts = float(input("Please enter the number of watts to be converted to BTU per hour: "))
-print((watts // .01) / 100, "watts is equivalent to", convertWtoBTU(watts),"BTU per hour")
+print(round(watts, 2), "watts is equivalent to", convertWtoBTU(watts),"BTU per hour")

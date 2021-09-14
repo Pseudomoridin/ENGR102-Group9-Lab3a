@@ -13,4 +13,4 @@ from conversions import convertCtoR
 
 #all functions are stored in and imported from conversions.py
 degreeC = float(input("Please enter the number of degrees Celcius to be converted to degrees Rankine: "))
-print((degreeC // .01) / 100, "degrees Celcius is equivalent to", convertCtoR(degreeC),"degrees Rankine")
+print(round(degreeC,2), "degrees Celcius is equivalent to", convertCtoR(degreeC),"degrees Rankine")
