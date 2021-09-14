@@ -26,7 +26,7 @@ def convertATMtoMMHG(atm):
 
 #Watts to BTU per hour
 def convertWtoBTU(watts):
-  btu = watts * 3.41
+  btu = watts * 3.412141633
   return btu
 
 #Liters per second to Gallons per minute

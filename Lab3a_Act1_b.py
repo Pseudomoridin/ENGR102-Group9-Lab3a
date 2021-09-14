@@ -13,4 +13,4 @@ from conversions import convertKMtoMI
 
 #all functions are stored in and imported from conversions.py
 km = float(input("Please enter the number of kilometers to be converted to miles: "))
-print("{_km:.2f} kilometers is equivalent to {miles:.2f} miles.".format(_km=km,miles=convertKMtoMI(km)))
+print("{_km:.2f} kilometers is equivalent to {miles:.2f} miles".format(_km=km,miles=convertKMtoMI(km)))
