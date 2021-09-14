@@ -15,21 +15,26 @@ def convertLbstoN(pounds):
   return (newtons // .01) / 100
 
 #kilometers to miles
-def convertKMtoMI():
-  return #null return, placeholder
+def convertKMtoMI(km):
+  miles = km * .621371
+  return (miles // .01) / 100
 
 #atm to mmHg
-def convertATMtoMMHG():
-  return #null return, placeholder
+def convertATMtoMMHG(atm):
+  torr = atm * 760
+  return (torr // .01) / 100
 
 #Watts to BTU per hour
-def convertWtoBTU():
-  return #null return, placeholder
+def convertWtoBTU(watts):
+  btu = watts * 3.41
+  return (btu // .01) / 100
 
 #Liters per second to Gallons per minute
-def convertLPStoGPM():
-  return #null return, placeholder
+def convertLPStoGPM(lps):
+  gpm = lps * 15.850323141489
+  return (gpm // .01) / 100
 
 #Degrees Celcius to Degrees Rankine
-def convertCtoR():
-  return #null return, placeholder
+def convertCtoR(degreesC):
+  degreesR = degreesC * (9/5) + 491.67
+  return (degreesR // .01) / 100
