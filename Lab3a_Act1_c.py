@@ -13,4 +13,4 @@ from conversions import convertATMtoMMHG
 
 #all functions are stored in and imported from conversions.py
 atm = float(input("Please enter the number of atmospheres to be converted to millimeters of mercury: "))
-print(round(atm,2), "atmospheres is equivalent to", convertATMtoMMHG(atm),"millimeters of mercury")
+print("{_atm:.2f} atmospheres is equivalent to {mmhg:.2f} millimeters of mercury".format(_atm=atm,mmhg=convertATMtoMMHG(atm)))

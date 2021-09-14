@@ -13,4 +13,4 @@ from conversions import convertLbstoN
 
 #all functions are stored in and imported from conversions.py
 pounds = float(input("Please enter the number of pounds to be converted to Newtons: "))
-print(round(pounds,2), "pounds is equivalent to", convertLbstoN(pounds),"Newtons")
+print("{_pounds:.2f} pounds is equivalent to {newtons:.2f} Newtons".format(_pounds=pounds,newtons=convertLbstoN(pounds)))

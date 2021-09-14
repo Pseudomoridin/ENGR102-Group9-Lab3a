@@ -12,29 +12,29 @@
 #pounds to newtons
 def convertLbstoN(pounds):
   newtons = pounds * 4.448
-  return round(newtons, 2)
+  return newtons
 
 #kilometers to miles
 def convertKMtoMI(km):
   miles = km * .621371
-  return round(miles, 2)
+  return miles
 
 #atm to mmHg
 def convertATMtoMMHG(atm):
   torr = atm * 760
-  return round(torr, 2)
+  return torr
 
 #Watts to BTU per hour
 def convertWtoBTU(watts):
   btu = watts * 3.41
-  return round(btu, 2)
+  return btu
 
 #Liters per second to Gallons per minute
 def convertLPStoGPM(lps):
   gpm = lps * 15.850323141489
-  return round(gpm, 2)
+  return gpm
 
 #Degrees Celcius to Degrees Rankine
 def convertCtoR(degreesC):
   degreesR = degreesC * (9/5) + 491.67
-  return round(degreesR, 2)
+  return degreesR
