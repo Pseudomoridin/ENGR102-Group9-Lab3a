@@ -10,5 +10,9 @@
 # Date:         September 8, 2021
 
 #pounds to newtons
-def convertLbstoN():
-  return #null return, placeholder
+def convertLbstoN(pounds):
+  newtons = pounds * 4.448
+  return newtons
+
+inPut = float(input("Please enter the number of pounds to be converted to Newtons: "))
+print(inPut, "pounds is equivalent to", convertLbstoN(inPut),"Newtons")
