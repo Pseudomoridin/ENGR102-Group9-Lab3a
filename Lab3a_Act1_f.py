@@ -8,3 +8,7 @@
 # Section:      472/572
 # Assignment:   Lab 2A Activity 3
 # Date:         September 8, 2021
+
+#Degrees Celcius to Degrees Rankine
+def convertCtoR():
+  return #null return, placeholder

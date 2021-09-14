@@ -8,3 +8,7 @@
 # Section:      472/572
 # Assignment:   Lab 2A Activity 3
 # Date:         September 8, 2021
+
+#atm to mmHg
+def convertATMtoMMHG():
+  return #null return, placeholder

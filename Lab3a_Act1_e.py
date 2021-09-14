@@ -8,3 +8,7 @@
 # Section:      472/572
 # Assignment:   Lab 2A Activity 3
 # Date:         September 8, 2021
+
+#Liters per second to Gallons per minute
+def convertLPStoGPM():
+  return #null return, placeholder
