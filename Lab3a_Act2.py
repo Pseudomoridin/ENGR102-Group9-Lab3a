@@ -23,7 +23,6 @@ def interpolate(point1, point2):
   zslope = (point2["position"][2] - point1["position"][2]) / timediff
   zint = - (point2["time"]*zslope) + point2["position"][2]
   pointlist = []
-  print(xslope,yslope,zslope)
   for x in range (5):
     temppoint = {
       "time":point1["time"] + (x * timediffstep), # time works, this gives the correct time at the point
@@ -52,4 +51,7 @@ point2["position"][0] = float(input("Enter the x position of the object at time 
 point2["position"][1] = float(input("Enter the y position of the object at time 2: "))
 point2["position"][2] = float(input("Enter the z position of the object at time 2: "))
 
-print(interpolate(point1, point2))
+point_list = interpolate(point1, point2)
+print()
+for x in range (5):
+  print("At time {:.1f} seconds the object is at ({:.2f}, {:.2f}, {:.2f})".format(point_list[x]["time"],point_list[x]["position"][0],point_list[x]["position"][1],point_list[x]["position"][2]))
