@@ -8,3 +8,44 @@
 # Section:      472/572
 # Assignment:   Lab 2A Activity 3
 # Date:         September 8, 2021
+
+# positions will be stored in lists ordered x, y, z
+# points will be stored in a dictionary containing the time and position
+# functions are parametric
+
+def interpolate(point1, point2):
+  timediff = (point2["time"] - point1["time"]) / 4
+  xslope = (point2["position"][0] - point1["position"][0]) / timediff
+  yslope = (point2["position"][1] - point1["position"][1]) / timediff
+  zslope = (point2["position"][2] - point1["position"][2]) / timediff
+  pointlist = []
+  for x in range (5):
+    temppoint = {
+      "time":point1["time"] + (x * timediff),
+      "position":[
+        xslope * (x * timediff) + point1["position"][0],
+        yslope * (x * timediff) + point1["position"][0],
+        zslope * (x * timediff) + point1["position"][0]
+      ]
+    }
+    pointlist.append(temppoint)
+    temppoint = {}
+  return pointlist
+
+
+position1 = [0,0,0]
+point1 = {"position":position1}
+position2 = [0,0,0]
+point2 = {"position":position2}
+
+point1["time"] = float(input("Enter time 1: "))
+point1["position"][0] = float(input("Enter the x position of the object at time 1: "))
+point1["position"][1] = float(input("Enter the y position of the object at time 1: "))
+point1["position"][2] = float(input("Enter the z position of the object at time 1: "))
+
+point2["time"] = float(input("Enter time 2: "))
+point2["position"][0] = float(input("Enter the x position of the object at time 2: "))
+point2["position"][1] = float(input("Enter the y position of the object at time 2: "))
+point2["position"][2] = float(input("Enter the z position of the object at time 2: "))
+
+print(interpolate(point1, point2))
