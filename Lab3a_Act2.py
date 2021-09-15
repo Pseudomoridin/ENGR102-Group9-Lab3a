@@ -14,22 +14,23 @@
 # functions are parametric
 
 def interpolate(point1, point2):
-  timediff = (point2["time"] - point1["time"]) / 4
+  timediff = (point2["time"] - point1["time"])
+  timediffstep = timediff / 4.0
   xslope = (point2["position"][0] - point1["position"][0]) / timediff
   yslope = (point2["position"][1] - point1["position"][1]) / timediff
   zslope = (point2["position"][2] - point1["position"][2]) / timediff
   pointlist = []
+  print(xslope,yslope,zslope)
   for x in range (5):
     temppoint = {
-      "time":point1["time"] + (x * timediff),
+      "time":point1["time"] + (x * timediffstep), # time works, this gives the correct time at the point
       "position":[
-        xslope * (x * timediff) + point1["position"][0],
-        yslope * (x * timediff) + point1["position"][0],
-        zslope * (x * timediff) + point1["position"][0]
+        xslope * (point1["time"] + x * timediffstep) + point1["position"][0],
+        yslope * (point1["time"] + x * timediffstep) + point1["position"][1],
+        zslope * (point1["time"] + x * timediffstep) + point1["position"][2]
       ]
     }
     pointlist.append(temppoint)
-    temppoint = {}
   return pointlist
 
 
