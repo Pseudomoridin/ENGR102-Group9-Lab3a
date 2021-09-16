@@ -6,3 +6,5 @@
 4. The icon below "Files" is version control. When you're done editing, type in a short description of what you changed and click "commit and push"
     - I will handle the merge errors and branches
 5. The .replit file controls which file the green "run" button runs. To change the file run, simply change the file name.
+
+## **To turn in to mimir, only submit the files with .py extensions**
